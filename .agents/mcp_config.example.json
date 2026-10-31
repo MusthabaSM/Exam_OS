@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "refero": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sse", "https://api.refero.design/mcp"],
+      "env": {
+        "REFERO_API_KEY": "MANUAL_ACTION_REQUIRED"
+      }
+    },
+    "getlayers": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sse", "https://mcp.getlayers.ai/mcp"],
+      "env": {
+        "GETLAYERS_API_KEY": "MANUAL_ACTION_REQUIRED"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.git/
+.next/
+node_modules/
+src-tauri/
+android/
+scratch/
+.agents/
+tests/
+coverage/
+
+# Artifacts
+*.apk
+*.aab
+*.msi
+*.exe
+*.log
+*.zip
+*.tar.gz

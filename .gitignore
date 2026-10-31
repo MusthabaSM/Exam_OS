@@ -1,6 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
 .pnp.*
@@ -10,32 +8,72 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# Environment variables & secrets (keep .env.example tracked)
+.env
+.env.*
+.env*.local
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Testing & Coverage
 /coverage
 
-# next.js
+# Next.js Build Outputs
 /.next/
 /out/
+/build/
+dist/
 
-# production
-/build
+# Postinstall Copied PDF.js Fonts
+/public/standard_fonts/
 
-# misc
-.DS_Store
-*.pem
+# Vercel
+.vercel
 
-# debug
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Crash Dumps & Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+hs_err_pid*
+replay_pid*
 
-# env files (can opt-in for committing if needed)
-.env*
+# Android Build & Local Config
+android/.gradle/
+android/local.properties
+android/**/build/
+*.apk
+*.aab
+*.keystore
+*.jks
 
-# vercel
-.vercel
+# Tauri / Rust Build Outputs
+src-tauri/target/
+src-tauri/gen/schemas/
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Generated Prisma Client
+src/generated/
+
+# Scratch & Temporary Debug Files
+/scratch/
+dump.txt
+extracted.txt
+dummy.pdf
+debug-pages.json
+prisma_old/
+
+# Agent & Local Tools Config
+.agents/mcp_config.json
+.impeccable/
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.idea/
